@@ -12,7 +12,7 @@ Node.js
 
 Typescript :
 
-npm install typescript*
+npm install typescript
 
 ## Cloner le projet
 
