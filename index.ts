@@ -4,10 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 app.get('/ping', (req: Request, res: Response) => {
-    res.json({
-        message: 'Pong!',
-        headers: req.headers
-    });
+    res.json(req.headers);
 });
 
 // Middleware pour gérer toutes les autres routes inconnues (404)

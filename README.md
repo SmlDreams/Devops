@@ -10,22 +10,16 @@ Avant de commencer, assurez-vous d'avoir installé :
 
 Node.js
 
-Typescript :
+installer les dépendances : 
 
-npm install typescript
+```
+npm install
+```
 
 ## Cloner le projet
 
 git clone https://github.com/SmlDreams/Devops.git
 cd Devops
-
-# Installer les dépendances
-
-install express : 
-
-```
-npm install express
-```
 
 # Démarrage du serveur
 
