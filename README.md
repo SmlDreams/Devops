@@ -93,14 +93,3 @@ pour lancer le docker file :
 ```shell
 docker run -p 4000:4000 wik-dps-api-multi
 ```
-
-# dockerfile BONUS
-
-pour le bonus rien de plus simple, 
-voilà les étapes :
-
-```shell
-cd ./Bonus #il faut être dans le dossier Devops au préalable
-docker build -t tiny_counter . 
-docker run --rm tiny-counter  
-```
