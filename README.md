@@ -54,3 +54,53 @@ Réponse :
 TypeScript
 
 Express
+
+
+
+# DockerFile simple 
+
+pour build le dockerfile : 
+
+```shell
+docker build -t wik-dps-api . 
+```
+
+pour lancer le docker file :
+
+```shell
+docker run -p 4000:4000 wik-dps-api
+```
+
+pour arreter le conteneur : 
+
+```shell
+docker ps 
+CONTAINER ID   IMAGE               COMMAND              CREATED          STATUS          PORTS                    NAMES
+2be720935f00   wik-dps-api   "docker-entrypoint.s…"   14 minutes ago   Up 14 minutes   0.0.0.0:4000->4000/tcp   inspiring_khayyam
+docker stop 2be720935f00 
+```
+
+# dockerfile multi (arreter le docker pour lancer le deuxième dockerfile)
+
+pour build le dockerfile : 
+
+```shell
+docker build -t wik-dps-api-multi -f Dockerfile.multi . 
+```
+
+pour lancer le docker file :
+
+```shell
+docker run -p 4000:4000 wik-dps-api-multi
+```
+
+# dockerfile BONUS
+
+pour le bonus rien de plus simple, 
+voilà les étapes :
+
+```shell
+cd ./Bonus #il faut être dans le dossier Devops au préalable
+docker build -t tiny_counter . 
+docker run --rm tiny-counter  
+```
